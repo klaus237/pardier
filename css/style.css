@@ -303,3 +303,16 @@
 h2 {
   padding-bottom: 25px;
 }
+/* Styling for the anchor tag to maintain layout */
+.partner-link {
+  display: inline-block;
+  text-decoration: none; /* Remove underline */
+  color: #54595f;
+  text-align: center; /* Center-align text and images */
+}
+
+.partner-link:hover {
+  text-decoration: none; /* Prevent underline on hover */
+  transform: scale(1.02); /* Slight zoom effect */
+  transition: transform 0.2s ease;
+}
