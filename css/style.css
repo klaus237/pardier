@@ -106,6 +106,17 @@
   .bg-hero {
     background-size: cover;
   }
+  /* .bg-hero {
+    background: unset;
+  } */
+}
+@media (max-width: 990px) {
+  .bg-hero {
+    background: none;
+  }
+  .bg-testimonial {
+    background-image: none !important;
+  }
 }
 
 .about-start,
