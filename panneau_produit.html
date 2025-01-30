@@ -185,8 +185,8 @@
             }
 
             td {
-                text-align: right;
-                padding-left: 50%;
+                /* text-align: right;
+                padding-left: 50%; */
                 position: relative;
             }
 
@@ -202,6 +202,11 @@
 
 
         @media (max-width: 768px) {
+
+            .title {
+                text-align: center;
+            }
+
             .product {
                 flex-direction: column;
                 text-align: center;
@@ -209,6 +214,10 @@
 
             .product img {
                 width: 100px;
+            }
+
+            .bg-call-to-action {
+                background: unset;
             }
         }
     </style>
