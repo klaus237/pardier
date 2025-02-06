@@ -1,9 +1,12 @@
 /********** Template CSS **********/
 :root {
-  --primary: #ffe468;
+  --primary: #4f3884;
   --secondary: #8cc641;
   --light: #f2f2f2;
   --dark: #272630;
+}
+.bg-primary {
+  background-color: #4f3884 !important;
 }
 
 .btn {
@@ -97,11 +100,33 @@
   }
 }
 
-.bg-hero {
-  background: url(../img/hero.jpg) top right no-repeat;
+/* .bg-hero {
+  background: url(../img/pt.png) top right no-repeat;
   background-size: contain;
+} */
+.bg-hero {
+  position: relative;
+  background: url(../img/pt.png) top right no-repeat;
+  background-size: cover;
+  height: 82vh;
 }
 
+.bg-hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background-color: rgba(
+    79,
+    56,
+    132,
+    0.7
+  ); */
+  /* Purple overlay with 50% transparency */
+  z-index: 0;
+}
 @media (max-width: 991.98px) {
   .bg-hero {
     background-size: cover;
@@ -127,8 +152,9 @@
 
 .about-start,
 .about-end {
-  background: url(../img/about-bg.jpg) center center no-repeat;
+  /* background: url(../img/about-bg.jpg) center center no-repeat; */
   background-size: contain;
+  color: #ffffff;
 }
 
 @media (min-width: 992px) {
@@ -147,16 +173,20 @@
 
 .service-item,
 .contact-item {
-  background: url(../img/service.jpg) top center no-repeat;
+  /* background: url(../img/service.jpg) top center no-repeat; */
   background-size: cover;
   transition: 0.5s;
   height: 90%;
+  background-color: #4f3884;
+  color: #ffffff;
+  font-size: 18px;
 }
 
 .service-item:hover,
 .contact-item:hover {
-  background: url(../img/service.jpg) bottom center no-repeat;
+  /* background: url(../img/service.jpg) bottom center no-repeat; */
   background-size: cover;
+  background-color: #3189c8;
 }
 
 .service-item .service-icon,
@@ -258,8 +288,9 @@
 }
 
 .bg-testimonial {
-  background: url(../img/testimonial.jpg) top left no-repeat;
+  /* background: url(../img/testimonial.jpg) top left no-repeat; */
   background-size: contain;
+  color: #ffffff;
 }
 
 @media (max-width: 991.98px) {
